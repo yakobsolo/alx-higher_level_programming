@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import calculator_1 as calC
+import calculator_1 as calc
 a = 10
 b = 5
 print("{} + {} = {}".format(a, b, calc.add(a,b)))
