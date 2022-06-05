@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-import sys
-num_arguments = len(sys.argv[1:])
-sum = 0
-i = 1
-while num_arguments >= i:
-    sum = sum + int(sys.argv[i])
-    i += 1
-print(sum)
+from sys import argv
+
+i, res = 1, 0
+
+if __name__ == '__main__':
+    while i < len(argv):
+        res += int(argv[i])
+        i += 1
+    print(res)
