@@ -8,4 +8,4 @@ INSERT INTO second_table VALUES(2, "Alex", 3);
 -- insert a tuple
 INSERT INTO second_table VALUES(3, "Bob", 14);
 -- insert a person
-INSERT INTO second_table VALUES(4, "George", 8;)
+INSERT INTO second_table VALUES(4, "George", 8);
