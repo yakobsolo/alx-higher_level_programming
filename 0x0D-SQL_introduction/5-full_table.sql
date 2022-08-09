@@ -1,3 +1,3 @@
 -- FULL DESRIPTION OF TABLE
 -- describes a table
-DESC TABLES;
+SHOW CREATE TABLE first_table;
