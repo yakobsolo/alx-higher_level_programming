@@ -50,6 +50,7 @@ class Square:
              area of the square.
         """
         return self.__size ** 2
+
     def my_print(self):
         """
         prints square with character #
@@ -61,5 +62,3 @@ class Square:
                 for j in range(self.__size):
                     print("#", end="")
                 print()
-                    
-
