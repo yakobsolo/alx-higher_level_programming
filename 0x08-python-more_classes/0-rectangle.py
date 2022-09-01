@@ -2,7 +2,8 @@
 """ 0-rectangele.y - Rectangle """
 
 
-class Rectangle(object):
+class Rectangle:
     """
+    class of rectangle
     """
     pass
