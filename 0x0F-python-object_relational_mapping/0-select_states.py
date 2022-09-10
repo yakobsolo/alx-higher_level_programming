@@ -1,19 +1,18 @@
 #!/usr/bin/python3
-""" 0-select_states.py - conn"""
+''' lists all states from the database hbtn_0e_0_usa '''
 
 import MySQLdb
 from sys import argv
 
-conn = MySQLdb.connect(
-        host="localhost",
-        port=3306,
+if __name__ == '__main__':
+    db = MySQLdb.connect(
+        host='localhost',
         user=argv[1],
         passwd=argv[2],
+        port=3306,
         db=argv[3])
-cur = conn.cursor()
-cur.execute("SELECT * FROM states ORDER BY id ASC")
-query_rows = cur.fetchall()
-for row in query_rows:
-    print(row)
-cur.close()
-conn.close()
+    cur = db.cursor()
+    cur.execute('SELECT * FROM states ORDER BY id ASC;')
+    for row in cur.fetchall():
+        print(row)
+    db.close()
