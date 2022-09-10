@@ -14,10 +14,9 @@ if __name__ == "__main__":
                          password=argv[2],
                          database=argv[3])
     cur = db.cursor()
-    states_name = argv[4]
     cur.execute("SELECT * FROM states WHERE name LIKE\
     '{:s}' ORDER BY id ASC".format(argv[4]))
-    for row in cur.fetchall():
-        if row[1] == state_name:
+    for data in cur.fetchall():
+        if data[1] == argv[4]:
             print(data)
     db.close()
